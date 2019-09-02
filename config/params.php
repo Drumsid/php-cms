@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+// массив параметров
 return [
 	'admin_email' => 'admin@admin.com',
 	'shop_name' => 'inet_shop',

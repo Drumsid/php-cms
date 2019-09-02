@@ -7,4 +7,4 @@ new ishopfw\App();
 
 // \ishopfw\App::$app->setProperty('test', 'TEST');
 
-debug(\ishopfw\App::$app->getProperties());
+throw new Exception('Страница не найдена', 404);

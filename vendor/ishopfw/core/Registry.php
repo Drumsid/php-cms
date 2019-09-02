@@ -13,14 +13,14 @@ class Registry
 
     use TSingletone;
 
-    protected static $properties = [];
+    protected static $properties = []; // свойство для складывания свойств
 
-    public function setProperty($name, $value)
+    public function setProperty($name, $value) // кладет свойство
     {
         self::$properties[$name] = $value;
     }
 
-    public function getProperty($name)
+    public function getProperty($name)// получает свойство по имени если такое есть
     {
     	if (isset(self::$properties[$name])) {
     		return $properties[$name];
@@ -28,7 +28,7 @@ class Registry
     	return null;
     }
 
-    public function getProperties(){
+    public function getProperties(){ // вернет все свойства
     	return self::$properties;
     }
 }
